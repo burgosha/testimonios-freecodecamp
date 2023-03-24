@@ -1,4 +1,5 @@
 import React from "react";
+
 function Testimonio() {
     return(
         <div className="contenedor-testimonios">
@@ -15,3 +16,4 @@ function Testimonio() {
         </div>
     );
 }
+export default Testimonio;
