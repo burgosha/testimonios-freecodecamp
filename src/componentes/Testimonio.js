@@ -13,7 +13,7 @@ function Testimonio(props) {
                 <p className="nombre-testimonio">
                     <strong>{props.nombre}</strong> en {props.pais}</p>
                 <p className="cargo-testimonio">{props.cargo} en <strong>{props.empresa}</strong></p>
-                <p className="texto-testimonio">"{props.testimonio}"</p>
+                <div className="texto-testimonio">{props.testimonio}</div>
             </div>
         </div>
     );
