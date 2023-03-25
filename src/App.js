@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Testimonio from './componentes/Testimonio';
+import Testimonios from './componentes/Testimonios';
 import { Fragment } from 'react';
 
 function App() {
@@ -8,6 +9,12 @@ function App() {
     <div className="App">
       <div className='contenedor-principal'>
         <h1>Esto es lo que dicen nuestros alumnos sobre freeCodeCamp:</h1>
+        {Testimonios.map((testimonio) => {
+          return(
+            <Testimonio nombre={testimonio.nombre} pais={testimonio.pais} imagen={testimonio.imagen} cargo={testimonio.cargo} empresa={testimonio.empresa} testimonio={testimonio.testimonio}/>
+          )
+        }
+        )}
         <Testimonio
           nombre="Shawn Wang"
           pais="Singapur"
